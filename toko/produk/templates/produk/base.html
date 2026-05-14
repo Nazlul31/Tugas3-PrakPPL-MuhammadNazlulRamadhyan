@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NazTech</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-cyan-600 to-teal-500 text-white shadow-lg">
+
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+            <div>
+                <h1 class="text-3xl font-extrabold">
+                    NazTech
+                </h1>
+
+                <p class="text-sm text-blue-100">
+                    Smart Electronics Store
+                </p>
+            </div>
+
+            <div class="space-x-6 font-medium">
+                <a href="/" class="hover:text-yellow-300 transition">
+                    Home
+                </a>
+
+                <a href="/produk/" class="hover:text-yellow-300 transition">
+                    Produk
+                </a>
+
+                <a href="/kontak/" class="hover:text-yellow-300 transition">
+                    Kontak
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-10">
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+</body>
+</html>
